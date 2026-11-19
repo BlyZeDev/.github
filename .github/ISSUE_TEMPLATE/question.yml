@@ -1,0 +1,33 @@
+name: Question
+description: Ask for help or further information
+type: "❓ Question"
+assignees:
+  - BlyZeDev
+body:
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before you start
+      options:
+        - label: I read the documentation and searched existing issues
+          required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+      description: Be as specific as possible
+    validations:
+      required: true
+  - type: textarea
+    id: tried
+    attributes:
+      label: What have you tried?
+    validations:
+      required: false
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      placeholder: Only if relevant
+    validations:
+      required: false
