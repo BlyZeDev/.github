@@ -1,0 +1,28 @@
+name: Documentation
+description: Something is missing, unclear or wrong in the docs
+type: "📖 Documentation"
+assignees:
+  - BlyZeDev
+body:
+  - type: input
+    id: location
+    attributes:
+      label: Where?
+      description: Link or file/section where the problem is
+      placeholder: README.md, "Installation" section
+    validations:
+      required: false
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is the problem?
+      description: Missing, outdated, unclear or incorrect?
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested improvement
+      description: How should it read instead?
+    validations:
+      required: false
